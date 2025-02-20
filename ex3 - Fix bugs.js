@@ -12,10 +12,11 @@
 // You should use the DEBUGGER and execute step by step the function iterations.
 function findAverage(numbers) {
   let sum = 0;
-  for (let i = 0; i <= numbers.length; i++) {
+  for (let i = 0; i < numbers.length; i++) {
     sum += numbers[i];
   }
-  return sum / numbers.length;
+  const answer=sum / numbers.length;
+  return answer;
 }
 
 let scores = [85, 90, 75, 95, 80];

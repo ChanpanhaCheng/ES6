@@ -11,11 +11,12 @@
 // TO CHECK
 // Check that your code still produce the same result
 
-let originalArray = [1, 2, 3, 4, 5];
+ let originalArray = [1, 2, 3, 4, 5];
 
 function updateArray(array, index, newValue) {
-  array[index] = newValue;
-  return array;
+  	const copy=[...array]
+  copy[index] = newValue;
+  return copy;
 }
 
 let updatedArray = updateArray(originalArray, 2, 10);
